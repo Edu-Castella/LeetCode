@@ -42,6 +42,13 @@
 
 class Solution(object):
     def doesAliceWin(self, s):
+        return any(c in "aeiouAEIOU" for c in s)
+
+
+
+
+class Solution(object):
+    def doesAliceWin(self, s):
         for c in s:
             if self.isVowel(c):
                 return True
